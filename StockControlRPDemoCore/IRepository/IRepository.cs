@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockControlRPDemoCore.IRepository
 {
-    public interface IRespository<TEntity, TKey> where TEntity : class
+    public interface IRepository<TEntity, TKey> where TEntity : class
     {
         Task<TEntity> Get(TKey Id);
         IEnumerable<TEntity> GetAll();
@@ -16,6 +16,6 @@ namespace StockControlRPDemoCore.IRepository
         Task<bool> Update(TKey Id, TEntity entity);
         Task<long> Count();
         bool Remove(TEntity entity);
-        Task<int> RemoveRange(IEnumerable<TEntity> entities);
+        int RemoveRange(IEnumerable<TEntity> entities);
     }
 }
