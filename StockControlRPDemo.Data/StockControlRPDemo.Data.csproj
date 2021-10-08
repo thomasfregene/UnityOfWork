@@ -17,8 +17,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\StockControlRPDemoCore\StockControlRPDemoCore.csproj" />
-  </ItemGroup>
-
 </Project>

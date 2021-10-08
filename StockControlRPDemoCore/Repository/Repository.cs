@@ -11,7 +11,7 @@ namespace StockControlRPDemoCore.Repository
 {
     public class Repository<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class
     {
-        private readonly DbContext Context;
+        protected readonly DbContext Context;
 
         public Repository(DbContext context)
         {
